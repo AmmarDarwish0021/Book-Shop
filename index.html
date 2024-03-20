@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center">Frontend Development Books</h1>
+    </header>
+    <div id="filters" class="container filter-bar">
+        <!-- Filter -->
+    </div>
+    <main id="book-list" class="container">
+        <!-- Books-->
+    </main>
+    <div class="cart-icon-container" onclick="toggleCartDrawer()">
+        <img src="icons//cart.png" alt="Cart Icon" class="cart-icon"> 
+        <span id="cart-total" class="cart-total">$0.00</span>
+    </div>
+    <div id="cart" class="container cart-drawer">
+        <span class="close-icon" onclick="toggleCartDrawer()">&#10006;</span> <!-- Default icon -->
+        <h2>Shopping Cart</h2>
+        <div id="cart-items" style="display: none;">
+            <!-- Shopping cart -->
+        </div>
+        <div id="checkout">
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

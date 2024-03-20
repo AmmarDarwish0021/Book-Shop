@@ -1,0 +1,30 @@
+{
+    "UX": [
+        { "title": "Don't Make Me Think", "author": "Steve Krug", "price": 20, "icon": "icons//Don't make me think.jpg", "description": "Lorem ipsum." },
+        { "title": "The Design of Everyday Things", "author": "Don Norman", "price": 25, "icon": "icons//the-design-of-everyday-things-cover.png", "description": "Lorem ipsum." },
+        { "title": "100 Things Every Designer Needs to Know About People", "author": "Susan Weinschenk", "price": 30, "icon": "icons//100 things.jpg", "description": "Lorem ipsum." },
+        { "title": "Lean UX", "author": "Jeff Gothelf, Josh Seiden", "price": 28, "icon": "icons//Leanx jeff gothelf.jpg", "description": "Lorem ipsum." },
+        { "title": "The Elements of User Experience", "author": "Jesse James Garrett", "price": 22, "icon": "icons//user experience.jpg", "description": "Lorem ipsum." }
+    ],
+    "HTML": [
+        { "title": "Design with Bootstrap", "author": "Ammar Darwish", "price": 35, "icon": "icons//all-in.jpg", "description": "Responsive design is a web development approach that ensures web pages display well on a variety of devices and window or screen sizes. Bootstrap is a popular framework that makes it easy to create responsive and mobile-friendly websites. It provides a grid system, pre-built components and styles to easily create responsive layouts without reinventing the wheel." },
+        { "title": "HTML - An Introduction", "author": "Ammar Darwish", "price": 30, "icon": "icons//all-in.jpg", "description": "HTML (Hypertext Markup Language) is a standard markup language used to create web pages and web applications. It uses various tags and attributes to provide the structure and content of a web page. Introduction to HTML covers topics such as the basic structure of HTML documents, text formatting, links, images, lists, tables, forms, and HTML5 semantic elements." },
+        { "title": "Learning Web Design", "author": "Jennifer Niederst Robbins", "price": 30, "icon": "icons//Web design.jpg", "description": "Lorem ipsum." },
+        { "title": "Head First HTML and CSS", "author": "Elisabeth Robson, Eric Freeman", "price": 28, "icon": "icons//Head-first.jpg", "description": "Lorem ipsum." },
+        { "title": "HTML5 for Web Designers", "author": "Jeremy Keith", "price": 20, "icon": "icons//HTml5 for w-d.jpg", "description": "Lorem ipsum." }
+    ],
+    "CSS": [
+        { "title": "CSS - An Introduction", "author": "Ammar Darwish", "price": 27, "icon": "icons//all-in.jpg", "description": "Cascading Style Sheets (CSS) is a style sheet language used to describe the appearance of documents written in HTML or XML. CSS describes how elements are rendered on screen, paper, speech, or other media. Introduction to CSS covers topics like selectors, properties, values, box model, positioning, layout techniques, and responsive design." },
+        { "title": "CSS: The Definitive Guide", "author": "Eric A. Meyer, Estelle Weyl", "price": 32, "icon": "icons//CSS The definitive Guide.jpg", "description": "Lorem ipsum." },
+        { "title": "Learn to code HTML & CSS", "author": "Shay Howe", "price": 24, "icon": "icons//Shay Howe.jpg", "description": "Lorem ipsum." },
+        { "title": "HTML & CSS: The Complete Reference 5th", "author": "Thomas A. Powell", "price": 18, "icon": "icons//Thomas A. Powell.png", "description": "Lorem ipsum." },
+        { "title": "Modern CSS", "author": "Joe Attardi", "price": 26, "icon": "icons//Joe-attardi.jpg", "description": "Lorem ipsum." }
+    ],
+    "JavaScript": [
+        { "title": "JavaScript - An Introduction", "author": "Ammar Darwish", "price": 40, "icon": "icons//all-in.jpg", "description": "JavaScript is a programming language that allows you to create dynamic and interactive web content. Introduction to JavaScript covers basic concepts such as variables, data types, operators, control structures, functions, arrays, objects, and DOM manipulation. Event handling, asynchronous programming, and error handling are also covered." },
+        { "title": "JavaScript Absolute Beginner's Guide", "author": "Kirupa Chinnathambi", "price": 45, "icon": "icons//Kirup Chinnathambi.jpg", "description": "Lorem ipsum." },
+        { "title": "The road to React", "author": "Robin Wieruch", "price": 30, "icon": "icons//Robin Wieruch.jpg", "description": "Lorem ipsum." },
+        { "title": "JavaScript: The Comprehensive Guide", "author": "Philip Ackermann", "price": 35, "icon": "icons//Philip Ackermann.jpg", "description": "Lorem ipsum." },
+        { "title": "JavaScript for Kids: A Playful Introduction to Programming", "author": "Nick Morgan", "price": 35, "icon": "icons//Nick Morgan.jpg", "description": "Lorem ipsum." }
+    ]
+}

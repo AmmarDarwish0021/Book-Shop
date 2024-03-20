@@ -1,0 +1,141 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Flexbox layout for book items */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.book-item {
+  flex-basis: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 250px;
+}
+
+.book-item:hover {
+  background-color: #f9f9f9;
+}
+
+.book-item img {
+  max-width: 70%; 
+  max-height: 40%; 
+  margin-bottom: 5px;
+}
+
+.book-info h3 {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.book-info p {
+  margin: 3px 0;
+  font-size: 0.8em; 
+}
+
+.buy-button {
+  margin-top: auto;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+/* Filter bar styles */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: #048825;
+  color: #fff; 
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: bold;
+}
+
+.filter-select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.filter-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-button {
+  padding: 10px 20px; 
+  color: #007bff; 
+  border: 1px solid #000000; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #03862e;
+  color: #fff;
+  border-color: #03862e;
+}
+
+/* Shopping cart styles */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #f9f9f9;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+.cart-drawer h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cart-icon-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+}
+
+.close-icon {
+  cursor: pointer;
+}

@@ -84,6 +84,7 @@ function renderBookList(data, filters = {}) {
         buyButton.textContent = "Buy";
         buyButton.classList.add("buy-button");
         buyButton.addEventListener("click", function() {
+            event.stopPropagation(); //stop showing detailed view 
             addToCart(book);
         });
 
@@ -91,6 +92,11 @@ function renderBookList(data, filters = {}) {
         bookInfo.appendChild(buyButton);
         bookItem.appendChild(bookInfo);
         bookList.appendChild(bookItem);
+
+        // Add click event listener to show detailed view
+        bookItem.addEventListener("click", function() {
+            showBookDetails(book);
+        });
     });
 }
 
@@ -179,7 +185,6 @@ function renderFilters(data) {
     filtersContainer.appendChild(clearFilterButton);
 }
 
-
 function applyFilters() {
     const category = document.getElementById("categoryFilter").value;
     const author = document.getElementById("authorFilter").value;
@@ -257,3 +262,34 @@ function removeFromCart(book) {
 function checkout() {
     // Payment
 }
+
+function showBookDetails(book) {
+    const modal = document.getElementById("book-details-modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+    const modalAuthor = document.getElementById("modal-author");
+    const modalPrice = document.getElementById("modal-price");
+    const modalDescription = document.getElementById("modal-description");
+
+    modalImg.src = book.icon; 
+    modalImg.alt = book.title + " image"; 
+    modalTitle.textContent = book.title;
+    modalAuthor.textContent = "Author: " + book.author;
+    modalPrice.textContent = "Price: $" + book.price;
+    modalDescription.textContent = "Description: " + book.description;
+
+    modal.style.display = "block";
+
+    // Close the modal when the user clicks on the close button or outside the modal
+    const closeModal = document.getElementsByClassName("close")[0];
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+}
+
